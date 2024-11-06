@@ -1,0 +1,491 @@
+@font-face{
+    font-family: "Mangiola-Regular";
+    src: url('fonts/Mangiola-Regular.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: "MonospaceTypewriter";
+    src: url('fonts/MonospaceTypewriter.tff') format("truetype");
+}
+@font-face{
+    font-family: "Sell-Your-Soul";
+    src: url('fonts/Sell-Your-Soul.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: "TT Fors Trial ExtraLight";
+    src: url('fonts/TT Fors Trial ExtraLight.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: "Kulderin";
+    src: url('fonts/Kulderin.otf') format("truetype");
+}
+
+body{
+    margin: 0px;
+}
+
+.header{
+    background-image: url('img/plante.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+}
+.promotion{
+    height: 23px;
+    background-color: #2c4537;
+    width: 100%;
+    text-align: center;
+}
+
+.shipping{
+    color: white;
+}
+
+.linknav{
+    background-color: white;
+    padding: 12px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Mangiola-Regular";
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul li{
+    padding: 0 10px;
+}
+
+.list1{
+    margin: 20px;
+}
+
+.list2{
+    margin: 20px;
+}
+
+.submainheader{
+    text-align: center;
+    position: relative;      
+    color: white;
+    padding-top: 100px;
+}
+
+.submainheader h2{
+    font-size: 63px;    
+    background-position: center;
+    text-transform: uppercase;
+    font-family: "Sell-Your-Soul";
+}   
+
+.btncontainer{
+    position: relative;
+}
+
+.btncontainer .box{
+    background-color: #2c4537;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "MonospaceTypewriter";
+}
+
+.produits{
+    text-align: center;
+    position: relative;
+    font-family: "Mangiola-Regular";
+    font-size: 14px;
+}
+
+.catégorie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    row-gap: 20px;
+    column-gap: 10px; 
+}
+
+.sprayvert, .spraygris, .sprayjaune, .sprayblanc {
+    background-color: white;
+    padding: 50px; 
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.sprayvert img, .spraygris img, .sprayjaune img, .sprayblanc img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nomproduit {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    font-family: "Kulderin";
+}
+
+.prix {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    font-family: "Kulderin";
+}
+
+.ancienprix {
+    font-size: 14px;
+    color: #999;
+    text-decoration: line-through;
+    font-family: "Kulderin";
+}
+
+.sprayvert:hover, .spraygris:hover, .sprayjaune:hover, .sprayblanc:hover {
+    transform: scale(1.05);  
+    transition: transform 0.2s;
+}
+
+.pageavantage{
+    background-color: #f5f5f5;
+} 
+
+.nosavantage {
+    text-align: center;
+    position: relative;
+    font-family: "Mangiola-Regular";
+    font-size: 14px;
+    padding: 10px;
+}
+
+.avantagecontainer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.avantage {
+    flex: 1;
+    margin: 0 15px;
+    padding: 20px;
+}
+
+.avantage h2 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: "Mangiola-Regular";
+}
+
+.avantage p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-family: "Kulderin";
+}
+
+@media (max-width: 1024px) {
+    .pageavantage {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .pageavantage {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .pageavantage {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2f523d;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "MonospaceTypewriter";
+}
+
+.bouton:hover {
+    background-color: #23412d;
+}
+
+.pagestory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    margin: 0 auto; 
+}
+
+.imagestory {
+    flex: 1;
+    max-width: 50%; 
+    display: flex;
+    justify-content: center;
+}
+
+.imagestory img {
+    width: 100%;
+}
+
+.textsection {
+    flex: 1;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textsection h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    font-family: "Mangiola-Regular";
+}
+
+.textsection h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.9px;
+    margin-bottom: 10px; 
+    font-family: "TT Fors Trial ExtraLight";
+}
+
+.textsection p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    font-family: "Kulderin";
+}
+
+.boutonstory {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2f523d;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "MonospaceTypewriter";
+    border: none;
+    cursor: pointer;
+    margin-top: 15px; 
+    text-align: left;
+    width: max-content;
+}
+
+.boutonstory:hover {
+    background-color: #23412d;
+}
+
+@media (max-width: 768px) {
+    .pagestory {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .imagestory, .textsection {
+        max-width: 100%;
+    }
+
+    .textsection {
+        padding: 40px;
+    }
+
+    .textsection h1 {
+        font-size: 1.8rem;
+    }
+
+    .textsection h2 {
+        font-size: 1rem;
+    }
+
+    .textsection p {
+        font-size: 0.9rem;
+    }
+
+    .boutonstory {
+        font-size: 11px;
+    }
+}
+
+.autresproduits{
+    text-align: center;
+    position: relative;
+    font-family: "Mangiola-Regular";
+    font-size: 14px;
+}
+
+.catégorie {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    row-gap: 20px;
+    column-gap: 10px; 
+}
+
+.sprayorange, .sprayrose, .sprayroseclaire, .spraynoir {
+    background-color: white;
+    padding: 50px; 
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.sprayorange img, .sprayrose img, .sprayroseclaire img, .spraynoir img {
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nomproduit {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    font-family: "Kulderin";
+}
+
+.prix {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    font-family: "Kulderin";
+}
+
+.sprayorange:hover, .sprayrose:hover, .sprayroseclaire:hover, .spraynoir:hover {
+    transform: scale(1.05);  
+    transition: transform 0.2s;
+}
+
+.sprayorange:hover, .sprayrose:hover, .sprayroseclaire:hover, .spraynoir:hover {
+    transform: scale(1.05);  
+}
+
+@media (max-width: 1024px) {
+    .catégorie {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .catégorie {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .catégorie {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.pagemail {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+.pagemail h1 {
+    text-align: center;
+    position: relative;
+    font-family: "Mangiola-Regular";
+    font-size: 28px;
+}
+
+.pagemail p {
+    font-size: 15px;
+    color: #555;
+    font-family: "Kulderin";
+}
+
+.pagemail .email-icone {
+    font-size: 24px;
+    color: #333;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #ccc;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+    margin-left: 50px;
+}
+
+
+.footer h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-family: "Kulderin";
+}
+
+.footer a {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    font-family: "TT Fors Trial ExtraLight";
+}
+
+.footer input[type="email"] {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #333;
+    border: none;
+    color: #ccc;
+    font-size: 14px;
+    font-family: "MonospaceTypewriter";
+}
+
+.footer input[type="email"]::placeholder {
+    color: #999;
+}
+
+.inscription {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-family: "TT Fors Trial ExtraLight";
+
+}
+
+.inscription input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin: 5px 0;
+}
+
+.footerlogo img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
